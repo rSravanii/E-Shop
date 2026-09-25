@@ -1,4 +1,6 @@
 # E-Shop – E-Commerce Web Application
+deployed link : https://e-shop-alpha-drab.vercel.app/
+
 
 E-Shop is a responsive mini e-commerce website developed as a front-end capstone project. It allows users to browse products, search for products, view product details, add products to a cart, create an account, and log in.
 
