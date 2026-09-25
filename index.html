@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Shop | Online Shopping</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo" >E-Shop </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+
+            <a href="index.html#products">Products</a>
+
+            <a href="cart.html" class="cart-link">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </a>
+            <a href="login.html" class="login-btn"> Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                WELCOME TO E-SHOP
+            </p>
+
+            <h1>
+                Shop Your Favourite Products
+            </h1>
+
+            <p>
+                Discover electronics, fashion, accessories and more
+                at E-Shop.
+            </p>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search products..."
+                    aria-label="Search products"
+                >
+
+                <button 
+                type ="button"
+                id="search-button">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <main>
+
+        <section class="products-section" id="products">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        EXPLORE OUR STORE
+                    </p>
+
+                    <h2>
+                        All Products
+                    </h2>
+                </div>
+
+                <p id="product-count"></p>
+
+            </div>
+
+
+            <!-- Product Grid -->
+            <div
+                id="product-grid"
+                class="product-grid"
+            >
+                <!-- Products will be added using JavaScript -->
+            </div>
+
+
+            <!-- No Products Message -->
+            <div
+                id="no-products"
+                class="empty-message hidden"
+                style="display: none;"
+            >
+                No products found
+
+                <p>
+                    Try searching for another product.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Product Details Popup -->
+    <div
+        id="product-modal"
+        class="modal hidden"
+        aria-hidden="true"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="close-modal"
+                class="close-btn"
+                aria-label="Close"
+            >
+                &times;
+            </button>
+
+            <div id="modal-body">
+                <!-- Product details will appear here -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 E-Shop. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

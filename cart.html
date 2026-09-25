@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Shop | Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                E-Shop
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Products</a>
+
+                <a href="cart.html" class="cart-link">
+                    Cart
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Cart Section -->
+    <main class="cart-page">
+
+        <div class="container">
+
+            <div class="page-heading">
+                <h1>Shopping Cart</h1>
+                <p>Review your products before checkout.</p>
+            </div>
+
+
+            <div class="cart-layout">
+
+                <!-- Cart Items -->
+                <section class="cart-items-section">
+
+                    <div class="cart-section-header">
+                        <h2>Your Cart</h2>
+                    </div>
+
+                    <!-- cart.js will insert products here -->
+                    <div id="cart-container" class="cart-container">
+
+                        <div class="empty-cart" id="empty-cart">
+                            <h3>Your cart is empty</h3>
+                            <p>Add some products from our store.</p>
+
+                            <a href="index.html" class="btn">
+                                Continue Shopping
+                            </a>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Cart Summary -->
+                <aside class="cart-summary">
+
+                    <h2>Order Summary</h2>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">₹0</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <span id="cart-delivery">Free</span>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="cart-total">₹0</span>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="checkout-button"
+                        class="btn checkout-btn"
+                    >
+                        Proceed to Checkout
+                    </button>
+
+                    <a href="index.html" class="continue-shopping">
+                        ← Continue Shopping
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <p>
+                © 2026 E-Shop. All rights reserved.
+            </p>
+
+            <p>
+                Mini E-Commerce Web Application
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
