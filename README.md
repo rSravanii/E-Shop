@@ -61,6 +61,8 @@ E-Shop/
 └── images/
     └── product images
 
+depolyed link : https://e-shop-alpha-drab.vercel.app/
+
 - Main Pages
 --> Home Page
 The home page displays the available products in a responsive grid. Users can search for a product and add products to their cart.
